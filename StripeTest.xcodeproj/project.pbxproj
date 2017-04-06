@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		2BBFDA091E9509B40098B5D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBFDA081E9509B40098B5D7 /* AppDelegate.swift */; };
-		2BBFDA0B1E9509B40098B5D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBFDA0A1E9509B40098B5D7 /* ViewController.swift */; };
 		2BBFDA0E1E9509B40098B5D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BBFDA0C1E9509B40098B5D7 /* Main.storyboard */; };
 		2BBFDA111E9509B40098B5D7 /* StripeTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BBFDA0F1E9509B40098B5D7 /* StripeTest.xcdatamodeld */; };
 		2BBFDA131E9509B40098B5D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BBFDA121E9509B40098B5D7 /* Assets.xcassets */; };
 		2BBFDA161E9509B40098B5D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BBFDA141E9509B40098B5D7 /* LaunchScreen.storyboard */; };
+		2BBFDA1E1E95AD100098B5D7 /* MyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBFDA1D1E95AD100098B5D7 /* MyAPIClient.swift */; };
+		2BBFDA201E95AD850098B5D7 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBFDA1F1E95AD850098B5D7 /* Networking.swift */; };
+		2BBFDA221E95C0C10098B5D7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBFDA211E95C0C10098B5D7 /* MainViewController.swift */; };
+		2BBFDA271E95CA1D0098B5D7 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBFDA251E95CA1D0098B5D7 /* PaymentViewController.swift */; };
+		2BBFDA281E95CA1D0098B5D7 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BBFDA261E95CA1D0098B5D7 /* PaymentViewController.xib */; };
+		8F0619DECA83656D4F6BD096 /* Pods_StripeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3253D2A433C01C7AC46618 /* Pods_StripeTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2BBFDA051E9509B40098B5D7 /* StripeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StripeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BBFDA081E9509B40098B5D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2BBFDA0A1E9509B40098B5D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2BBFDA0D1E9509B40098B5D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BBFDA101E9509B40098B5D7 /* StripeTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StripeTest.xcdatamodel; sourceTree = "<group>"; };
 		2BBFDA121E9509B40098B5D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BBFDA151E9509B40098B5D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BBFDA171E9509B40098B5D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BBFDA1D1E95AD100098B5D7 /* MyAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAPIClient.swift; sourceTree = "<group>"; };
+		2BBFDA1F1E95AD850098B5D7 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		2BBFDA211E95C0C10098B5D7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2BBFDA251E95CA1D0098B5D7 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		2BBFDA261E95CA1D0098B5D7 /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
+		BC3253D2A433C01C7AC46618 /* Pods_StripeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StripeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C04D610B3D71570E8DE4A0BC /* Pods-StripeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StripeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-StripeTest/Pods-StripeTest.release.xcconfig"; sourceTree = "<group>"; };
+		C76079375E0261576683609A /* Pods-StripeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StripeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StripeTest/Pods-StripeTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F0619DECA83656D4F6BD096 /* Pods_StripeTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				2BBFDA071E9509B40098B5D7 /* StripeTest */,
 				2BBFDA061E9509B40098B5D7 /* Products */,
+				D4F49DBF0868E3E731F527E7 /* Pods */,
+				C4F375706226693CB2C305AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +72,35 @@
 			isa = PBXGroup;
 			children = (
 				2BBFDA081E9509B40098B5D7 /* AppDelegate.swift */,
-				2BBFDA0A1E9509B40098B5D7 /* ViewController.swift */,
+				2BBFDA1D1E95AD100098B5D7 /* MyAPIClient.swift */,
+				2BBFDA211E95C0C10098B5D7 /* MainViewController.swift */,
+				2BBFDA251E95CA1D0098B5D7 /* PaymentViewController.swift */,
+				2BBFDA261E95CA1D0098B5D7 /* PaymentViewController.xib */,
 				2BBFDA0C1E9509B40098B5D7 /* Main.storyboard */,
+				2BBFDA1F1E95AD850098B5D7 /* Networking.swift */,
 				2BBFDA121E9509B40098B5D7 /* Assets.xcassets */,
 				2BBFDA141E9509B40098B5D7 /* LaunchScreen.storyboard */,
 				2BBFDA171E9509B40098B5D7 /* Info.plist */,
 				2BBFDA0F1E9509B40098B5D7 /* StripeTest.xcdatamodeld */,
 			);
 			path = StripeTest;
+			sourceTree = "<group>";
+		};
+		C4F375706226693CB2C305AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC3253D2A433C01C7AC46618 /* Pods_StripeTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4F49DBF0868E3E731F527E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C76079375E0261576683609A /* Pods-StripeTest.debug.xcconfig */,
+				C04D610B3D71570E8DE4A0BC /* Pods-StripeTest.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BBFDA1A1E9509B40098B5D7 /* Build configuration list for PBXNativeTarget "StripeTest" */;
 			buildPhases = (
+				49C359BB78AFB811C20D3765 /* [CP] Check Pods Manifest.lock */,
 				2BBFDA011E9509B40098B5D7 /* Sources */,
 				2BBFDA021E9509B40098B5D7 /* Frameworks */,
 				2BBFDA031E9509B40098B5D7 /* Resources */,
+				D8E334F6120D65320D8B8C52 /* [CP] Embed Pods Frameworks */,
+				869528CD405B08DCBE7E5DE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,10 +169,59 @@
 				2BBFDA161E9509B40098B5D7 /* LaunchScreen.storyboard in Resources */,
 				2BBFDA131E9509B40098B5D7 /* Assets.xcassets in Resources */,
 				2BBFDA0E1E9509B40098B5D7 /* Main.storyboard in Resources */,
+				2BBFDA281E95CA1D0098B5D7 /* PaymentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49C359BB78AFB811C20D3765 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		869528CD405B08DCBE7E5DE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StripeTest/Pods-StripeTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8E334F6120D65320D8B8C52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StripeTest/Pods-StripeTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2BBFDA011E9509B40098B5D7 /* Sources */ = {
@@ -141,8 +229,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BBFDA111E9509B40098B5D7 /* StripeTest.xcdatamodeld in Sources */,
-				2BBFDA0B1E9509B40098B5D7 /* ViewController.swift in Sources */,
+				2BBFDA271E95CA1D0098B5D7 /* PaymentViewController.swift in Sources */,
+				2BBFDA201E95AD850098B5D7 /* Networking.swift in Sources */,
+				2BBFDA221E95C0C10098B5D7 /* MainViewController.swift in Sources */,
 				2BBFDA091E9509B40098B5D7 /* AppDelegate.swift in Sources */,
+				2BBFDA1E1E95AD100098B5D7 /* MyAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +356,7 @@
 		};
 		2BBFDA1B1E9509B40098B5D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C76079375E0261576683609A /* Pods-StripeTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S7KV3J2AMW;
@@ -278,6 +370,7 @@
 		};
 		2BBFDA1C1E9509B40098B5D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C04D610B3D71570E8DE4A0BC /* Pods-StripeTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S7KV3J2AMW;
@@ -308,6 +401,7 @@
 				2BBFDA1C1E9509B40098B5D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

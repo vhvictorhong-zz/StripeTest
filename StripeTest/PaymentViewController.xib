@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentViewController" customModule="StripeTest" customModuleProvider="target">
+            <connections>
+                <outlet property="amountTextField" destination="Yx6-l8-NRB" id="wmV-B4-pUh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8o-4K-6Kg">
+                    <rect key="frame" x="157.5" y="218.5" width="60" height="30"/>
+                    <state key="normal" title="Payment"/>
+                    <connections>
+                        <action selector="paymentAction:" destination="-1" eventType="touchUpInside" id="Mm4-aO-IUJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udt-Vw-sPi">
+                    <rect key="frame" x="157" y="252" width="61" height="30"/>
+                    <state key="normal" title="Shipping"/>
+                    <connections>
+                        <action selector="shippingAction:" destination="-1" eventType="touchUpInside" id="Z2T-S4-Tks"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yx6-l8-NRB">
+                    <rect key="frame" x="10" y="318" width="355" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ylb-a3-xpK">
+                    <rect key="frame" x="172.5" y="385" width="30" height="30"/>
+                    <state key="normal" title="Pay"/>
+                    <connections>
+                        <action selector="payAction:" destination="-1" eventType="touchUpInside" id="mf7-9R-hng"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="udt-Vw-sPi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.8" id="7Po-FQ-CNT"/>
+                <constraint firstItem="Yx6-l8-NRB" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="9El-2e-aLq"/>
+                <constraint firstItem="P8o-4K-6Kg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.7" id="ELa-Cz-heo"/>
+                <constraint firstItem="Ylb-a3-xpK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Q0B-tF-EFD"/>
+                <constraint firstItem="Yx6-l8-NRB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="UlM-x5-GWz"/>
+                <constraint firstAttribute="trailing" secondItem="Yx6-l8-NRB" secondAttribute="trailing" constant="10" id="djI-do-J0K"/>
+                <constraint firstItem="udt-Vw-sPi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rZv-pJ-bMy"/>
+                <constraint firstItem="Ylb-a3-xpK" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.2" id="tS6-zb-Lbf"/>
+                <constraint firstItem="P8o-4K-6Kg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="umw-UD-KBh"/>
+                <constraint firstItem="Yx6-l8-NRB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wFN-AF-trd"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
