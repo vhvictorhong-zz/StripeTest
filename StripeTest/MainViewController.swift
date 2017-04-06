@@ -10,21 +10,33 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var amountTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-//        let paymentVC = self.storyboard?.instantiateViewController(withIdentifier: "PaymentViewController") as! PaymentViewController
-        let VC = PaymentViewController()
-        
-        self.navigationController?.pushViewController(VC, animated: false)
-        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    @IBAction func donateAction(_ sender: Any) {
+        
+        if (amountTextField.text?.isEmpty)! {
+            
+            let alertController = UIAlertController(title: "Error", message: "You did not enter an amount", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(action)
+            self.present(alertController, animated: true, completion: nil)
+            
+        } else {
+            
+            let VC = PaymentViewController(amount: Int(amountTextField.text!)!)
+            
+            self.navigationController?.pushViewController(VC, animated: true)
+        }
+        
+        
     }
     
 

@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,76 +20,39 @@
                     <view key="view" contentMode="scaleToFill" id="QAR-5G-wCv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="E8I-5W-lS4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1P-2i-I2I" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2142" y="63"/>
-        </scene>
-        <!--Payment View Controller-->
-        <scene sceneID="K6q-dR-vDf">
-            <objects>
-                <viewController storyboardIdentifier="PaymentViewController" id="D8M-Lj-qR6" customClass="PaymentViewController" customModule="StripeTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XGy-kF-puA"/>
-                        <viewControllerLayoutGuide type="bottom" id="HLk-y0-acW"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VJJ-Z3-bnE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U0Q-Hj-MEE">
-                                <rect key="frame" x="10" y="318.5" width="355" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGb-vP-qVU">
+                                <rect key="frame" x="162" y="368" width="50" height="30"/>
+                                <state key="normal" title="Donate"/>
+                                <connections>
+                                    <action selector="donateAction:" destination="Psh-09-fIW" eventType="touchUpInside" id="jj5-3h-GXA"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lMW-i5-af1">
+                                <rect key="frame" x="10" y="318" width="355" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AM5-Yg-Hgj">
-                                <rect key="frame" x="157.5" y="218.5" width="60" height="30"/>
-                                <state key="normal" title="Payment"/>
-                                <connections>
-                                    <action selector="paymentAction:" destination="D8M-Lj-qR6" eventType="touchUpInside" id="hrI-2L-dRA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eja-Nt-HJf">
-                                <rect key="frame" x="157" y="252" width="61" height="30"/>
-                                <state key="normal" title="Shipping"/>
-                                <connections>
-                                    <action selector="shippingAction:" destination="D8M-Lj-qR6" eventType="touchUpInside" id="MOp-ku-mby"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhP-m7-hh9">
-                                <rect key="frame" x="172" y="385" width="30" height="30"/>
-                                <state key="normal" title="Pay"/>
-                                <connections>
-                                    <action selector="payAction:" destination="D8M-Lj-qR6" eventType="touchUpInside" id="7Wg-ZK-f1H"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="U0Q-Hj-MEE" firstAttribute="centerY" secondItem="VJJ-Z3-bnE" secondAttribute="centerY" id="1yg-fy-4sA"/>
-                            <constraint firstItem="OhP-m7-hh9" firstAttribute="centerX" secondItem="VJJ-Z3-bnE" secondAttribute="centerX" id="5Ip-lU-V7A"/>
-                            <constraint firstItem="eja-Nt-HJf" firstAttribute="centerX" secondItem="VJJ-Z3-bnE" secondAttribute="centerX" id="Pgd-aB-b2X"/>
-                            <constraint firstItem="OhP-m7-hh9" firstAttribute="centerY" secondItem="VJJ-Z3-bnE" secondAttribute="centerY" multiplier="1.2" id="W7L-9m-6VU"/>
-                            <constraint firstAttribute="trailing" secondItem="U0Q-Hj-MEE" secondAttribute="trailing" constant="10" id="Wuc-aq-HNC"/>
-                            <constraint firstItem="AM5-Yg-Hgj" firstAttribute="centerY" secondItem="VJJ-Z3-bnE" secondAttribute="centerY" multiplier="0.7" id="YZI-zw-u1O"/>
-                            <constraint firstItem="U0Q-Hj-MEE" firstAttribute="leading" secondItem="VJJ-Z3-bnE" secondAttribute="leading" constant="10" id="sfe-NQ-ZhW"/>
-                            <constraint firstItem="U0Q-Hj-MEE" firstAttribute="centerX" secondItem="VJJ-Z3-bnE" secondAttribute="centerX" id="tu5-XM-a0v"/>
-                            <constraint firstItem="AM5-Yg-Hgj" firstAttribute="centerX" secondItem="VJJ-Z3-bnE" secondAttribute="centerX" id="xzA-r7-frd"/>
-                            <constraint firstItem="eja-Nt-HJf" firstAttribute="centerY" secondItem="VJJ-Z3-bnE" secondAttribute="centerY" multiplier="0.8" id="yeL-2v-ZIu"/>
+                            <constraint firstItem="lMW-i5-af1" firstAttribute="centerX" secondItem="QAR-5G-wCv" secondAttribute="centerX" id="5EQ-yz-xkl"/>
+                            <constraint firstItem="ZGb-vP-qVU" firstAttribute="centerX" secondItem="QAR-5G-wCv" secondAttribute="centerX" id="CAw-JR-Grh"/>
+                            <constraint firstItem="lMW-i5-af1" firstAttribute="centerY" secondItem="QAR-5G-wCv" secondAttribute="centerY" id="Dxi-o9-2ji"/>
+                            <constraint firstItem="lMW-i5-af1" firstAttribute="leading" secondItem="QAR-5G-wCv" secondAttribute="leading" constant="10" id="Noi-Vt-d8D"/>
+                            <constraint firstItem="ZGb-vP-qVU" firstAttribute="top" secondItem="lMW-i5-af1" secondAttribute="bottom" constant="20" id="UiW-kS-eUw"/>
+                            <constraint firstAttribute="trailing" secondItem="lMW-i5-af1" secondAttribute="trailing" constant="10" id="frd-wp-wGr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="6dU-zY-vVI"/>
+                    <navigationItem key="navigationItem" id="E8I-5W-lS4"/>
                     <connections>
-                        <outlet property="amountTextField" destination="U0Q-Hj-MEE" id="06Q-1Z-OI3"/>
+                        <outlet property="amountTextField" destination="lMW-i5-af1" id="uZb-fE-iEV"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HNk-HN-PyG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1P-2i-I2I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3030" y="63"/>
+            <point key="canvasLocation" x="2142" y="63"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="km4-6F-vRM">

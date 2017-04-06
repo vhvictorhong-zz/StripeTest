@@ -11,17 +11,15 @@ import Stripe
 
 class PaymentViewController: UIViewController {
     
-    @IBOutlet weak var amountTextField: UITextField!
-    
     let paymentContext: STPPaymentContext
     
-    init() {
+    init(amount: Int) {
         
         self.paymentContext = STPPaymentContext(apiAdapter: MyAPIClient())
         super.init(nibName: "PaymentViewController", bundle: Bundle.main)
         self.paymentContext.delegate = self
         self.paymentContext.hostViewController = self
-        self.paymentContext.paymentAmount = 5000
+        self.paymentContext.paymentAmount = amount
         
     }
     
@@ -71,7 +69,7 @@ extension PaymentViewController: STPPaymentContextDelegate {
     
     func paymentContext(_ paymentContext: STPPaymentContext, didCreatePaymentResult paymentResult: STPPaymentResult, completion: @escaping STPErrorBlock) {
         
-        MyAPIClient.sharedClient.completeCharge(paymentResult, amount: Int(self.amountTextField.text!)!, completion: completion)
+        MyAPIClient.sharedClient.completeCharge(paymentResult, amount: self.paymentContext.paymentAmount, completion: completion)
         
     }
     
@@ -85,7 +83,7 @@ extension PaymentViewController: STPPaymentContextDelegate {
             message = error?.localizedDescription ?? ""
         case .success:
             title = "Success"
-            message = "You bought a $\(self.amountTextField.text ?? "")!"
+            message = "You bought a $\(self.paymentContext.paymentAmount)!"
         case .userCancellation:
             return
         }

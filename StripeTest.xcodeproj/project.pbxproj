@@ -73,11 +73,11 @@
 			children = (
 				2BBFDA081E9509B40098B5D7 /* AppDelegate.swift */,
 				2BBFDA1D1E95AD100098B5D7 /* MyAPIClient.swift */,
+				2BBFDA1F1E95AD850098B5D7 /* Networking.swift */,
 				2BBFDA211E95C0C10098B5D7 /* MainViewController.swift */,
 				2BBFDA251E95CA1D0098B5D7 /* PaymentViewController.swift */,
 				2BBFDA261E95CA1D0098B5D7 /* PaymentViewController.xib */,
 				2BBFDA0C1E9509B40098B5D7 /* Main.storyboard */,
-				2BBFDA1F1E95AD850098B5D7 /* Networking.swift */,
 				2BBFDA121E9509B40098B5D7 /* Assets.xcassets */,
 				2BBFDA141E9509B40098B5D7 /* LaunchScreen.storyboard */,
 				2BBFDA171E9509B40098B5D7 /* Info.plist */,
