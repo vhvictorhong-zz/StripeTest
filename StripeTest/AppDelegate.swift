@@ -21,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Stripe Configuration
         STPPaymentConfiguration.shared().publishableKey = "pk_test_eo79XNgrEiK0XfR9Sl4g2LeI"
-                
+        STPPaymentConfiguration.shared().appleMerchantIdentifier = "merchant.com.example.victorhong"
+        
         return true
     }
 

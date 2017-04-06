@@ -31,9 +31,15 @@ class MainViewController: UIViewController {
             
         } else {
             
-            let VC = PaymentViewController(amount: Int(amountTextField.text!)!)
+            if var amount = Int(amountTextField.text!) {
+                
+                amount = amount * 100
+                
+                let VC = PaymentViewController(amount: amount)
+                
+                self.navigationController?.pushViewController(VC, animated: true)
+            }
             
-            self.navigationController?.pushViewController(VC, animated: true)
         }
         
         
